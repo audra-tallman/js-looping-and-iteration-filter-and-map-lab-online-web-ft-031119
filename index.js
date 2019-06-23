@@ -20,3 +20,9 @@ function exactMatch(drivers, matcher) {
     return matches;
   });
 }
+
+function exactMatchT0List(drivers, matcher) {
+  return exactMatch(drivers, matcher).map(function (driver){
+    return driver.name;
+  });
+}
